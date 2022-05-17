@@ -12,7 +12,7 @@ Please download [hififace_opensouce_299999.ckpt](https://drive.google.com/file/d
 And also download model in `model/README.md` and `model/Deep3DFaceRecon_pytorch/README.md`
 
 
-### Swapping face:
+## Swapping face:
 Swap the face in `source_image_path` to `target_image_path`.
 ```bash
 python hififace_inference.py --gpus 0 --model_config config/model.yaml --model_checkpoint_path hififace_opensouce_299999.ckpt \
@@ -22,7 +22,7 @@ python hififace_inference.py --gpus 0 --model_config config/model.yaml --model_c
 ```
 
 
-### Style Transfer:
+## Style Transfer:
 Transfer picture to `--style-imag` style.
 ```bash
 python MSG_main.py eval --content-image assets/result/result.png \ 
@@ -31,11 +31,11 @@ python MSG_main.py eval --content-image assets/result/result.png \
 ```
 Pre-trained style stored in `assets/21styles` \
 
-### HIfiface Training:
+## HIfiface Training:
 Adapt from [hififace](https://github.com/mindslab-ai/hififace)
 
 
-## Installation:
+### Installation:
 ```bash
 git clone https://github.com/Peternal/hififace_train.git 
 cd hififace_train
@@ -55,10 +55,10 @@ Follow [Deep3DFaceRecon_pytorch](https://github.com/sicxu/Deep3DFaceRecon_pytorc
 Download [ms1mv3_arcface_r100_fp16_backbone.pth](https://1drv.ms/u/s!AswpsDO2toNKq0lWY69vN58GR6mw?e=p9Ov5d) and store in hififace_train folder.\
 Download our [datasets](https://drive.google.com/file/d/1hPqQppICS6t3PF2ftTeRdkJFXxIeE4N9/view?usp=sharing) and extract it to hififace_train folder.
 
-## Training:
+### Training:
 You can modify the hyperparaneters in [config/model.yaml](config/model.yaml) and [config/trainer.yaml](config/trainer.yaml)
 
-## Run:
+### Run:
 ```bash
 python hififace_trainer.py --model_config config/model.yaml --train_config config/trainer.yaml -n hififace
 ```
