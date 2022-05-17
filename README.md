@@ -20,7 +20,7 @@ python hififace_inference.py --gpus 0 --model_config config/model.yaml --model_c
 --source_image_path assets/inference_samples/03_target.png \
 --target_image_path assets/AF_dataset/Pablo_Picasso/111.png
 ```
-Swap faces: Code to be added later
+
 
 ### Style Transfer:
 Transfer picture to `--style-imag` style.
@@ -30,7 +30,7 @@ python MSG_main.py eval --content-image assets/result/result.png \
 --output-image assets/result/transfer_result.png
 ```
 Pre-trained style stored in `assets/21styles` \
-More pre-trained (on our dataset) to be added later
+
 
 
 
