@@ -1,7 +1,7 @@
 # Face Swapping to Painting
 
 Adapt from [hififace](https://github.com/mindslab-ai/hififace) and [MSG-Net](https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer) \
-Test code upload. Train code to uploaded in hififace_train profile\
+Test code upload. Train code to uploaded in hififace_train file folder\
 Code only test in Windows while bash below writed in Linux formats. Requirement to be added later. 
 
 ## Download pre-trained Model:
